@@ -1,0 +1,343 @@
+/* Reset default margin and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #159A59;
+    color: #ffff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    padding: 20px; /* Sesuaikan padding untuk memberikan ruang di sekitar konten */
+}
+
+header .text_header {
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: 'Poppins';
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "container-left container-right";
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.container .container_left,
+.container .container_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container .container_left .logo_tittle,
+.container .container_right .tittle_login {
+    text-align: center;
+}
+
+.container .container_left .text_user {
+    font-size: 4vw;
+    text-align: center; /* Pusatkan teks */
+}
+
+.container .container_left .text_welcome {
+    color: #777777;
+    font-size: 2vw;
+    text-align: center; /* Pusatkan teks */
+}
+
+.container .container_right .tittle_login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 400;
+    font-style: bold;
+    text-align: center; /* Pusatkan teks */
+}
+
+.container .container_right .sub_login {
+    color: #777777;
+    font-size: 1.5vw;
+    max-width: 80%; /* Batasi lebar agar tidak terlalu melebar pada layar besar */
+    text-align: center; /* Pusatkan teks */
+}
+
+.container .container_right .form_login {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.container .container_right .form_login .username_login,
+.container .container_right .form_login .password_login {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.username_login .Username, .password_login .pw {
+    padding: 10px;
+}
+
+.container .container_right .form_login .username_login .Username,
+.container .container_right .form_login .password_login .pw {
+    min-height: 2.5vw;
+    border: 1px solid #3a3a3a5c;
+    border-radius: 5px;
+}
+
+.container .container_right .button_login {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end; /* Ubah menjadi flex-end agar tombol tetap di kanan */
+}
+
+.container .container_right button {
+    width: 15vw;
+    max-width: 200px; /* Batasi lebar tombol */
+    height: 2.5vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #159A59;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.container .container_right button:hover {
+    background-color: #47C6B7;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        padding-top: 10vh;
+    }
+
+    .container_left 
+    .logo img{
+        max-width: 150px;
+        height: auto;
+    }
+
+    .container_left
+    .logo_tittle{
+        visibility: hidden;
+    }
+
+    .container_right
+    .tittle_login{
+        font-size: 2rem !important;
+    }
+
+    .container_right
+    .sub_login{
+        font-size: 1rem !important;
+        margin-bottom: 3vh;
+    }
+
+    .container_right
+    .form_login{
+        min-height: 20vh !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        gap: 10px !important;
+    }
+
+    .container .container_right 
+    .button_login{
+        justify-content: center;
+    }
+
+    .button_login
+    button{
+        height: 30px !important;
+        width: 15vh !important;
+    }
+}
+
+/* Style for the container */
+.container_dashboard {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: "sidebar content";
+    min-height: 100vh;
+}
+
+/* Style for the sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #159A59;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.sidebar
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffff;
+}
+
+.tittle_nav{
+    width: 100%;
+}
+
+.tittle_nav h2{
+    text-align: left !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.sidebar ul {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
+
+.sidebar ul li a:hover {
+    background-color: #FFFFFF4D;
+    border-radius: 10px;
+}
+
+.content_dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsiveness for the sidebar */
+@media (max-width: 768px) {
+    .container_dashboard {
+        grid-template-columns: 1fr; /* Mengubah menjadi satu kolom pada layar kecil */
+        grid-template-areas: "content"; /* Hanya menampilkan konten pada layar kecil */
+    }
+
+    .sidebar {
+        display: none; /* Menyembunyikan sidebar pada layar kecil */
+    }
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+/* Dashboard Upload */
+
+
+/* Home */
+  
+nav .header{
+    background-color: #159A59;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.header
+.content_header{
+    display:flex ;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content_header
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+  nav ul {
+    list-style-type: none;
+    padding: 20px 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #159A59;
+  }
+
+.visi
+.tittle_visi{
+    font-style: bolder;
+    display: block;
+    text-align: center;
+}
+
+.visi
+.container_visi{
+    width: 100%;
+}
+
+.container_visi
+.content_visi{
+    width :40% ;
+}
+
+.container_visi
+.content_misi{
+    width :40% ;
+}
