@@ -244,10 +244,53 @@ header .text_header {
 
 .content_dashboard{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 2vw;
+    margin-top: 5vw;
+}
+
+.tittle_dashboard{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tittle_dashboard button{
+    width: 8vw;
+    height: 2.5vw;
+    background-color: #159A59;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content_wrap{
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.content_image img{
+    cursor: pointer;
+    max-width: 10vw;
+    background-color: #000;
+    border-radius: 2vw;
+}
+
+.content_text{
+    cursor: pointer;
+    max-width: 60%;
+}
+
+.content_button button{
+    cursor: pointer;
 }
 
 /* Responsiveness for the sidebar */
@@ -357,18 +400,6 @@ nav {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .content_dashboard .form_upload {
-        width: 100%; /* Mengubah lebar ke 100% pada layar kecil */
-    }
-
-    .upload_judul input,
-    .upload_deskripsi input {
-        height: auto; /* Mengubah tinggi input menjadi otomatis */
-    }
 }
 
 /* Home */
