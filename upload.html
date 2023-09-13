@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Admin</title>
+    <title>Dashboard Upload</title>
 </head>
 <body>
     <div class="container_dashboard">
@@ -26,9 +26,29 @@
                 <li><a href="#">Logout</a></li>
             </ul>
         </div>
-        <div class="content_dashboard">
-            <h1>Selamat Datang di Website Kami</h1>
-            <p>Ini adalah halaman dashboard admin.</p>
+        <div class="content_dashboard_upload">
+            <form action="" class="form_upload">
+                <div class="upload_judul">
+                    <label for="judul">Judul</label>
+                    <input type="text" name="judul" id="">
+                </div>
+
+                <div class="upload_deskripsi">
+                    <label for="deskripsi">Deskripsi</label>
+                    <input type="text" name="deskripsi" id="">
+                </div>
+
+                <div class="upload_image">
+                    <label for="gambar">Silahkan Upload Gambar!</label>
+                    <label for="gambar">Klik atau seret gambar</label>
+                    <input type="file" name="gambar">
+                </div>
+            </form>
+
+            <div class="button_upload">
+                <button>Submit</button>
+            </div>
+
         </div>
     </div>
 </body>
