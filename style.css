@@ -551,32 +551,55 @@ a{
     padding: 5vw;
 }
 
-.activity
-.card_activity{
+.slider-container {
+    width: 100%;
     overflow: hidden;
+}
+
+.card-slider {
     display: flex;
-    flex-direction: row;
-    width: 90%;
-    gap: 2vw;
+    transition: transform 0.5s ease-in-out;
 }
 
-.card_activity
-.card_content{
-    width: 20%;
+.card {
+    width: 300px;
+    margin-right: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card_content
-.image_card{
-    max-width: 15vw;
-    height: 15vw !important;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.card_content img{
-    min-width: 15vw;
+.card img {
+    max-width: 100%;
     height: auto;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.button_slider{
+    display: flex;
+    justify-content: center;
+    padding: 5vw;
+    gap: 3vw;
+}
+
+.button_slider button{
+    background-color: #159A59;
+    color: #fff;
+    border: none;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 5px;
 }
 
 .partnership{
