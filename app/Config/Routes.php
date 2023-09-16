@@ -40,10 +40,10 @@ $routes->get('/edit', 'Home::edit');
 
 $routes->get('/Content/(:segment)/edit_content', 'Content::edit_content/$1');
 
-$routes->post('/content/upload', 'content::upload');
+$routes->post('/Content/Upload', 'Content::Upload');
 $routes->post('/Login/register_user', 'Login::register_user');
 $routes->post('/Login/login_user', 'Login::login_user');
-$routes->post('/Content/(:segment)/Edit', 'Content::Edit/$1');
+$routes->post('/Content/(:segment)/update_edit', 'Content::update_edit/$1');
 $routes->delete('/Content/(:num)/delete_content', 'Content::delete_content/$1');
 
 /*

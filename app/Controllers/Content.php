@@ -15,6 +15,7 @@ class Content extends BaseController{
     {
         $this->data_edit = new data_edit(); // Inisialisasi model di dalam constructor
     }
+    
     public function Tampil()
     {
         $keyword = $this->request->getVar('keyword');
@@ -43,7 +44,7 @@ class Content extends BaseController{
     public function Upload(){
         $data_upload = new data_upload();
         $file = $this->request->getFile('gambar'); // Ambil file yang diunggah
-        $file->move('assets/images/'); // Pindahkan file ke direktori uploads
+        $file->move('assets/images'); // Pindahkan file ke direktori uploads
         $data = [
             'gambar' => $file->getName(),
             'judul' => $this->request->getVar('judul'),
@@ -81,6 +82,49 @@ class Content extends BaseController{
         $data_edit->delete();
         session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
         return redirect()->to(site_url('dashboard'));
+    }
+
+    public function update_edit($id)
+    {
+        if (!$this->validate([
+            'judul' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Isi Keluhan Tidak boleh kosong'
+                ]
+            ],
+            'deskripsi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama Tidak boleh kosong'
+                ]
+            ]
+        ])) {
+
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+
+        $berkas = new data_edit();
+        $dataBerkas = $this->request->getFile('gambar');
+
+        // Cek apakah ada berkas yang diunggah dan valid
+        if ($dataBerkas && $dataBerkas->isValid()) {
+            $fileName = $dataBerkas->getName();
+            $dataBerkas->move('assets/images', $fileName);
+        } else {
+            $currentAduan = $berkas->find($id); // Ambil data aduan yang akan diupdate
+            $fileName = $currentAduan['gambar']; // Gunakan gambar yang sudah ada
+        }
+
+        $berkas->update($id, [
+            'gambar' => $fileName,
+            'judul' => $this->request->getPost('judul'),
+            'deskripsi' => $this->request->getPost('deskripsi')
+        ]);
+
+        session()->setFlashdata('pesan', 'Data Aduan Berhasil diubah');
+        return redirect()->to(base_url('dashboard'));
     }
 }
 

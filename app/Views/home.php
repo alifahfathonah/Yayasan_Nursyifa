@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Yayasan Nursyifa</title>
 </head>
@@ -23,8 +22,7 @@
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -33,8 +31,7 @@
                         <a class="nav-link" href="<?php echo base_url('/') ?>">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -45,8 +42,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Gallery
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -55,8 +51,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Keanggotaan
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -74,50 +69,43 @@
     <div class="carousel_home" id="profile">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                    class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2" class="bg-black"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3" class="bg-black"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="bg-black"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="bg-black"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="<?php echo base_url('assets/images/Anggota.jpeg') ?>" class="d-block w-100" alt="...">
                     <div class="image_overlay"></div>
-                    <div
-                        class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-xl-5">
+                    <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-xl-5">
                         <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
-                        <p style="font-size: xx-large; font-weight: bold; font-family: 'Poppins', sans-serif;"
-                            class="text-dark w-90">
+                        <p style="font-size: xx-large; font-weight: bold; font-family: 'Poppins', sans-serif;" class="text-dark w-90">
                             Selamat Datang di <span class="text-success">Yayasan Nursyifa</span>, membangun negeri untuk
                             Indonesia</p>
                         <p class="text-dark">KETUA Dr.H Abdul Hams N. Sp. AM. <br>PEMBINA Dr.Handy Wiradharm Sp.OG.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="a.jpg" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('assets/images/Anggota.jpeg') ?>" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-flex d-md-block">
-                        <img src="logo.png" alt="">
+                        <img src="<?= base_url('assets/images/logo.png') ?>" alt="">
                         <h5>Second slide label</h5>
                         <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="profile.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('assets/images/Anggota.jpeg') ?>" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
                         <p>Some representative placeholder content for the third slide.</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -131,7 +119,7 @@
 
         <div class="container_visi" id="visi_misi">
             <div class="section_content">
-                <img src="Ellipse 3.png" alt="">
+                <img src="<?= base_url('assets/images/Ellipse 3.png') ?>" alt="">
             </div>
             <div class="content_visi">
                 <h3>Visi</h3>
@@ -145,7 +133,7 @@
 
         <div class="container_misi">
             <div class="section_content">
-                <img src="Ellipse 3.png" alt="">
+                <img src="<?= base_url('assets/images/Ellipse 3.png') ?>" alt="">
             </div>
             <div class="content_misi">
                 <h3>Misi</h3>
@@ -168,7 +156,7 @@
 
         <div class="logo_section">
             <div class="image_overlay"></div>
-            <img src="logo2.png" alt="">
+            <img src="<?= base_url('assets/images/logo2.png') ?>" alt="">
         </div>
     </div>
 
@@ -201,13 +189,15 @@
         <div class="slider-container">
             <div class="card-slider">
                 <?php foreach ($tampil as $k) : ?>
-                <div class="card">
-                    <img src="<?= base_url() . "/assets/images/" . $k['gambar'];?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><?= $k['judul'] ?></h5>
-                        <p class="card-text"><?= $k['deskripsi'] ?></p>
+                    <div class="card">
+                        <div class="card_images">
+                            <img src="<?= base_url() . "/assets/images/" . $k['gambar']; ?>" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $k['judul'] ?></h5>
+                            <p class="card-text"><?= $k['deskripsi'] ?></p>
+                        </div>
                     </div>
-                </div>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -290,8 +280,7 @@
 
     <!-- Tambahkan script JavaScript -->
     <script src="<?php echo base_url('assets/js/script.js') ?>"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
 </body>
 

@@ -40,8 +40,10 @@ class data_model extends Model
 
     function search($keyword)
     {
-        return $this->table('aduan')->like('nama', $keyword);
+        return $this->table('content')->like('judul', $keyword);
     }
+
+    
 
     function Content($userId)
     {

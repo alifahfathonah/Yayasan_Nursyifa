@@ -242,6 +242,11 @@ header .text_header {
     border-radius: 10px;
 }
 
+.sidebar ul li a.active {
+    background-color: #FFFFFF4D;
+    border-radius: 10px;
+}
+
 .content_dashboard{
     display: flex;
     flex-direction: column;
@@ -269,12 +274,11 @@ header .text_header {
 }
 
 .content_wrap{
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 80%;
     display: flex;
     flex-direction: row;
-    gap: 1vw;
 }
 
 .content_image img{
@@ -285,12 +289,34 @@ header .text_header {
 }
 
 .content_text{
-    cursor: pointer;
-    max-width: 60%;
+    width: 60%;
+}
+
+.content_text
+.content_description{
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Jumlah baris yang ingin ditampilkan */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Menampilkan elipsis (...) pada teks yang dipotong */
 }
 
 .content_button button{
     cursor: pointer;
+}
+
+.pagination{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: #000;
+}
+
+.pagination .page-item .active{
+    background-color: #159A59;
 }
 
 /* Responsiveness for the sidebar */
@@ -501,11 +527,21 @@ a{
     flex-direction: column;
 }
 
+.content_visi
+p{
+    color: #868686;
+}
+
 .container_misi
 .content_misi{
     width :50%;
     display: flex;
     flex-direction: column;
+}
+
+.content_misi
+ul li{
+    color: #868686;
 }
 
 .struktur_organisasi{
@@ -557,7 +593,10 @@ a{
 }
 
 .card-slider {
-    display: flex;
+    display: -webkit-box; /* Jumlah baris yang ingin ditampilkan */
+    -webkit-box-orient: horizontal;
+    overflow:-moz-hidden-unscrollable;
+    overflow: -webkit-hidden-unscollable;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -566,6 +605,11 @@ a{
     margin-right: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card_images{
+    width: 100%;
+    height: 20vw;
 }
 
 .card img {
@@ -584,6 +628,10 @@ a{
 
 .card-text {
     font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Jumlah baris yang ingin ditampilkan */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .button_slider{
@@ -619,6 +667,8 @@ a{
 .partnership
 .image_partnership img{
     padding: 5vw;
+    max-width: 30%;
+    height: auto;
 }
 
 .joinqr{

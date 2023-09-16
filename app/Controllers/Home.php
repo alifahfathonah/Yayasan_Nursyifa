@@ -33,10 +33,22 @@ class Home extends BaseController
     
         // Mengambil data menggunakan metode findAll()
         $tampil = $data_model->findAll();
-    
+
+
+        $keyword = $this->request->getVar('keyword');
+        if ($keyword) {
+            $tampil = $this->data_model->search($keyword);
+        } else {
+            $tampil = $this->data_model;
+        }
+
         $data = [
-            'title' => 'Daftar Aduan',
-            'tampil' => $tampil
+            'title' => 'Tampil Dashboard',
+            'tampil' => $tampil->paginate(
+                3,
+                'tampil'
+            ),
+            'pager' => $this->data_model->pager,
         ];
     
         return view('dashboard', $data);

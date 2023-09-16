@@ -24,3 +24,14 @@ document.querySelector(".next-button").addEventListener("click", () => {
 });
 
 showCard(currentIndex);
+
+document.addEventListener("DOMContentLoaded", function() {
+    var currentPage = window.location.pathname.split('/').pop();
+    var navLinks = document.querySelectorAll('a.nav-link');
+
+    for (var i = 0; i < navLinks.length; i++) {
+        if (navLinks[i].getAttribute("href") === currentPage) {
+            navLinks[i].classList.add("active");
+        }
+    }
+});

@@ -5,9 +5,12 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class data_upload extends Model{
-    protected $table = 'content';
-    protected $primarykey = 'id';
-    protected $allowedFields = ['judul','deskripsi', 'gambar'];
-    protected $useTimeStamps = true;
-    protected $useAutoincrement = true;
+    protected $table = "content";
+    protected $useTimestamps = true;
+    protected $useAutoIncrement = true;
+    protected $primaryKey = 'id';
+    protected $createdField = 'create_at';
+    protected $updatedField = 'update_at';
+    protected $dataFormat = 'datetime';
+    protected $allowedFields = ['id', 'judul', 'deskripsi', 'gambar'];
 }
