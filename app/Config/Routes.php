@@ -36,10 +36,9 @@ $routes->get('/upload', 'Home::upload');
 $routes->get('/register', 'Login::register');
 $routes->get('/Login/logout', 'Login::logout');
 $routes->get('/login', 'Login::login');
-$routes->get('/edit', 'Home::edit');
 
 $routes->get('/Content/(:segment)/edit_content', 'Content::edit_content/$1');
-
+$routes->get('/Content/(:segment)/activity_content', 'Content::activity_content/$1');
 $routes->post('/Content/Upload', 'Content::Upload');
 $routes->post('/Login/register_user', 'Login::register_user');
 $routes->post('/Login/login_user', 'Login::login_user');

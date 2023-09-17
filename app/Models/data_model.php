@@ -47,7 +47,6 @@ class data_model extends Model
 
     function Content($userId)
     {
-
         return $this->where('id', $userId)
             ->findAll();
     }

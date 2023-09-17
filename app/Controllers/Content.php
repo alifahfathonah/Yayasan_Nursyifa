@@ -76,6 +76,15 @@ class Content extends BaseController{
         return view('edit', $data);
     }
 
+    public function activity_content($id)
+    {
+        $data = [
+            'title' => 'Activity Home',
+            'tampil' => $this->data_edit->getEdit($id)
+        ];
+        return view('activity', $data);
+    }
+
     public function delete_content($id){
         $data_edit = new data_edit();
         $data_edit->where('id', $id);

@@ -11,12 +11,11 @@
 </head>
 
 <body>
-
     <nav>
         <div class="header">
             <div class="content_header">
                 <p>Yayasan Nursyifa - Samarinda - Kalimantan Timur</p>
-                <a href="<?php echo base_url('login') ?>">Login</a>
+                <a href="<?php echo base_url('login') ?>">Admin</a>
             </div>
         </div>
     </nav>
@@ -190,13 +189,15 @@
             <div class="card-slider">
                 <?php foreach ($tampil as $k) : ?>
                     <div class="card">
-                        <div class="card_images">
-                            <img src="<?= base_url() . "/assets/images/" . $k['gambar']; ?>" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"><?= $k['judul'] ?></h5>
-                            <p class="card-text"><?= $k['deskripsi'] ?></p>
-                        </div>
+                        <a href="<?php echo base_url('Content/' . $k['id'] . '/activity_content') ?>">
+                            <div class="card_images">
+                                <img src="<?= base_url() . "/assets/images/" . $k['gambar']; ?>" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $k['judul'] ?></h5>
+                                <p class="card-text"><?= $k['deskripsi'] ?></p>
+                            </div>
+                        </a>
                     </div>
                 <?php endforeach; ?>
             </div>

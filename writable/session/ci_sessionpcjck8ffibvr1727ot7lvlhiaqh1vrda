@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1694875248;_ci_previous_url|s:54:"http://localhost:8080/index.php/Content/2/edit_content";id|s:1:"3";email|s:16:"admin2@gmail.com";username|s:6:"admin2";role|s:1:"1";logged_in|b:1;error|s:256:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>File Extension Harus Berupa jpg, jpeg, gif, png</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
-";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:5:"judul";s:7:"Judul 2";s:9:"deskripsi";s:7:"Cekkkkk";}}_ci_validation_errors|a:1:{s:6:"gambar";s:47:"File Extension Harus Berupa jpg, jpeg, gif, png";}

@@ -55,9 +55,9 @@
 
                     <div class="content_text">
                         <div class="content_tittle">
-                            <h1>
+                            <h4>
                                 <?= $k['judul']; ?>
-                            </h1>
+                            </h4>
                         </div>
                         <div class="content_description">
                             <p>
@@ -67,11 +67,13 @@
                     </div>
 
                     <div class="content_button">
-                        <a href="<?php echo base_url('Content/' . $k['id'] . '/edit_content') ?>">Edit</a>
+                        <a href="<?php echo base_url('Content/' . $k['id'] . '/edit_content') ?>">
+                            <button class="btn btn-success">Edit</button>
+                        </a>
                         <form action="<?php echo base_url('Content/' . $k['id'] . '/delete_content') ?>" method="post" class="d-inline" onclick="return confirm('Apakah anda ingin menghapus data aduan ?');">
                             <? csrf_field(); ?>
                             <input type="hidden" value="Delete" name="_method">
-                            <button type="submit" class="btn btn-danger btn-s">delete</button>
+                            <button type="submit" class="btn btn-danger btn-s">Delete</button>
                         </form>
                     </div>
 
