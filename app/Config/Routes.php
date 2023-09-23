@@ -30,6 +30,7 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::utama');
+$routes->get('/about', 'About::about');
 
 $routes->get('/dashboard', 'Home::dashboard');
 $routes->get('/upload', 'Home::upload');
@@ -38,7 +39,7 @@ $routes->get('/Login/logout', 'Login::logout');
 $routes->get('/login', 'Login::login');
 
 $routes->get('/Content/(:segment)/edit_content', 'Content::edit_content/$1');
-$routes->get('/Content/(:segment)/activity_content', 'Content::activity_content/$1');
+$routes->get('/Activity/(:segment)/activity_content', 'Activity::activity_content/$1');
 $routes->post('/Content/Upload', 'Content::Upload');
 $routes->post('/Login/register_user', 'Login::register_user');
 $routes->post('/Login/login_user', 'Login::login_user');

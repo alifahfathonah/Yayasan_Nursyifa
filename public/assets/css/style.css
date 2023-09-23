@@ -281,10 +281,19 @@ header .text_header {
     flex-direction: row;
 }
 
+.content_image{
+    height: 10vw;
+    width: 10vw;
+    overflow: hidden;
+}
+
 .content_image img{
     cursor: pointer;
-    max-width: 10vw;
-    background-color: #000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
     border-radius: 2vw;
 }
 
@@ -306,6 +315,7 @@ header .text_header {
 
 .page-item.active .page-link {
     background-color: #159A59;
+    border-color:#159A59 ;
 }
 .content_button a{
     text-decoration: none;
@@ -485,70 +495,6 @@ a{
     background-color: rgba(255, 255, 255, 0.5); /* Warna putih samar dengan tingkat transparansi (alpha) */
     opacity: 1; /* Kecualikan ini jika Anda ingin efek selalu terlihat */
     transition: opacity 0.3s ease; /* Animasi efek transparansi */
-}
-
-.visi{
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    width: 100%;
-    position: relative;
-}
-
-.visi .logo_section{
-    position: absolute;
-    right: -0;
-    bottom: 0;
-}
-
-.visi .logo_section img{
-    width: auto;
-    height: 30vw;
-}
-
-.visi
-.tittle_visi{
-    font-style: bolder;
-    display: block;
-    text-align: center;
-}
-
-.visi
-.container_visi{
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    gap: 3vw;
-}
-
-.container_misi{
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    gap: 3vw;
-}
-
-.container_visi
-.content_visi{
-    width :50% ;
-    display: flex;
-    flex-direction: column;
-}
-
-.content_visi
-p{
-    color: #868686;
-}
-
-.container_misi
-.content_misi{
-    width :50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.content_misi
-ul li{
-    color: #868686;
 }
 
 .struktur_organisasi{
@@ -736,6 +682,11 @@ footer
     color: #515151;
 }
 
+footer
+.middle li a:hover{
+    color: #159A59;
+}
+
 footer .left img{
     width:7vw; 
     height: auto;
@@ -769,4 +720,88 @@ footer .left .socmed_icon a{
 
 .activity_description{
     text-indent: 20px;
+}
+
+/* About */
+.container_about{
+    margin: 2vw auto;
+    width: 80%;
+    display: grid;
+    grid-template-areas: "about_one about_two";
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.container_about .about_one{
+    text-indent: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_about .about_two{
+}
+
+.about_one img{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.visi{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    width: 100%;
+    position: relative;
+    background-color: #dcdcdc1f;
+}
+
+.visi .logo_section{
+    position: absolute;
+    right: -0;
+    bottom: 0;
+}
+
+.visi .logo_section img{
+    width: auto;
+    height: 30vw;
+}
+
+.visi
+.tittle_visi{
+    font-style: bolder;
+    display: block;
+    text-align: center;
+}
+
+.visi
+.container_visi{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    gap: 3vw;
+}
+
+.container_misi{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    gap: 3vw;
+}
+
+.container_visi
+.content_visi{
+    width :50% ;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_misi
+.content_misi{
+    width :50%;
+    display: flex;
+    flex-direction: column;
 }

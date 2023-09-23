@@ -19,6 +19,8 @@ class Auth_Filter implements FilterInterface
             return redirect()->to('login');
         }
     }
+
+    
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
         $user = session('id');

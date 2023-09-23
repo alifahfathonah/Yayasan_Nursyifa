@@ -21,11 +21,13 @@
                     <p>MENU</p>
                 </li>
             </ul>
+
             <?php
             $active = [
                 'upload' => 'active',
             ];
             ?>
+
             <ul>
                 <li><a href="<?= base_url('dashboard'); ?>">Dashboard</a></li>
                 <li><a class="<?= $active['upload'] ?>" href="<?= base_url('upload'); ?>">Upload</a></li>

@@ -34,7 +34,7 @@
                             About
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#profile">Profile</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/about') ?>">Profile</a></li>
                             <li><a class="dropdown-item" href="#struktur_organisasi">Struktur Organisasi</a></li>
                             <li><a class="dropdown-item" href="#visi_misi">Visi-Misi</a></li>
                             <li><a class="dropdown-item" href="#program_kerja">Program Kerja</a></li>
@@ -189,7 +189,7 @@
             <div class="card-slider">
                 <?php foreach ($tampil as $k) : ?>
                     <div class="card">
-                        <a href="<?php echo base_url('Content/' . $k['id'] . '/activity_content') ?>">
+                        <a href="<?php echo base_url('Activity/' . $k['id'] . '/activity_content') ?>">
                             <div class="card_images">
                                 <img src="<?= base_url() . "/assets/images/" . $k['gambar']; ?>" class="card-img-top" alt="...">
                             </div>

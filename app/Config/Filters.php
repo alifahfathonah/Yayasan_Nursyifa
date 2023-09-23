@@ -34,13 +34,13 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
-            'user' => ['except' => ['Login', 'Login/*', '/']], // Kecuali rute di bawah "user"
+            'user' => ['except' => ['Login', 'Login/*', '/', 'Activity', 'Activity/*', 'About', 'About/*']], // Kecuali rute di bawah "user"
         ],
         'after' => [
             'toolbar',
             // 'honeypot',
             // 'secureheaders',
-            'user' => ['except' => [ 'Login', 'Login/*', ]], // Kecuali rute di bawah "user"
+            'user' => ['except' => ['Activity', 'Activity/*']], // Kecuali rute di bawah "user"
         ],
     ];
 

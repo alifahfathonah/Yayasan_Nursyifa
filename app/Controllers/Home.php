@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\data_model;
 
-
 class Home extends BaseController
 {
     protected $data_model;
@@ -51,10 +50,5 @@ class Home extends BaseController
         ];
 
         return view('dashboard', $data);
-    }
-
-    public function upload(): string
-    {
-        return view('upload');
     }
 }
