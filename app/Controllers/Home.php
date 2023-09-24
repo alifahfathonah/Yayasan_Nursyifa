@@ -24,6 +24,16 @@ class Home extends BaseController
         return view('home', $data);
     }
 
+    public function gallery()
+    {
+        $tampil = $this->data_model->findAll();
+        $data = [
+            'title' => 'Daftar Aduan',
+            'tampil' => $tampil
+        ];
+        return view('gallery', $data);
+    }
+
     public function dashboard()
     {
         // Inisialisasi model data_model
@@ -50,5 +60,10 @@ class Home extends BaseController
         ];
 
         return view('dashboard', $data);
+    }
+
+    public function upload()
+    {
+        return view('upload');
     }
 }

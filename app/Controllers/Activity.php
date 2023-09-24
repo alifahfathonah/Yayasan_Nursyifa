@@ -3,10 +3,12 @@
 namespace App\Controllers;
 
 use App\Models\data_edit;
+use App\Models\gallery_model;
 
 class Activity extends BaseController
 {
     protected $data_edit;
+    protected $gallery_model;
 
     public function __construct()
     {
@@ -20,10 +22,14 @@ class Activity extends BaseController
             'tampil' => $this->data_edit->getEdit($id)
         ];
         return view('activity', $data);
-    } //baru
+    }
 
-    public function about()
+    public function getImage($id)
     {
-        return view('about');
+        $gallery_model = new gallery_model();
+        $imageData = $gallery_model->getImageByID($id);
+
+        // Kirim data gambar dalam format JSON
+        return $this->response->setJSON(['image_data' => $imageData]);
     }
 }

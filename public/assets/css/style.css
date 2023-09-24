@@ -447,34 +447,72 @@ nav {
 
 /* Home */
   
-nav .header{
-    background-color: #159A59;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding: 20px 0;
+.header{
+    padding: 5px 0;
 }
 
 .header
 .content_header{
-    display:flex ;
+    display:flex;
     width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .content_header
-a{
-    text-decoration: none;
-    color: #fff;
+.image_logo{
+    width: 5vw;
+    height: 5vw;
+}
+
+.image_logo
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.content_header p{
+    margin-bottom: 0;
+    color: #46705C;
+}
+
+.navbar{
+    background-color: #46705C;
+}
+
+.text_white{
+    color: #ffff;
 }
 
   .carousel_home{
     min-width: 100%;
     height: auto;
+  }
+
+  .carousel-caption{
+    bottom: 0 !important;
+    left: 10% !important;
+    background-color: #084226a1;
+    width: 40%;
+  }
+
+  .carousel-caption
+  a{
+    padding: 1vw;
+    border-radius: 30px;
+    background-color: rgba(33, 33, 33, 0.573);
+    cursor: pointer;
+    color: #ffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: border-radius 0.3s ease;
+  }
+
+  .carousel-caption
+  a:hover{
+    padding: 1vw;
+    border-radius: 2px;
+    background-color: #ffff;
+    color: #46705C !important;
+    cursor: pointer;
   }
 
   .carousel_home
@@ -495,6 +533,52 @@ a{
     background-color: rgba(255, 255, 255, 0.5); /* Warna putih samar dengan tingkat transparansi (alpha) */
     opacity: 1; /* Kecualikan ini jika Anda ingin efek selalu terlihat */
     transition: opacity 0.3s ease; /* Animasi efek transparansi */
+}
+
+.visi_misi{
+    width: 100%;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #46705C;
+}
+
+.visi_misi
+.visi_nav, .misi_nav{
+    cursor: pointer;
+    display: flex;
+    gap: 2vw;
+    color: #ffff;
+    flex-direction: row;
+}
+
+.visi_misi
+.visi_nav i, .misi_nav i{
+    font-size: 5vw;
+    color: #ffff;
+}
+
+.visi_nav .visi_text a:hover, 
+.misi_nav .misi_text a:hover{
+    animation: swing; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+.visi_nav
+.visi_text a, .misi_nav .misi_text a{
+    text-decoration: none;
+    padding: 0.5vw;
+    background-color: #ffff;
+    border-radius: 1vw;
+    color: #159A59;
+}
+
+.visi_nav
+.visi_text, .misi_nav .misi_text{
+    display: flex;
+    flex-direction: column;
 }
 
 .struktur_organisasi{
@@ -534,6 +618,81 @@ a{
 .program_kerja .program_kerja_img img{
     width:35vw;
     height: auto;
+}
+
+.gallery{
+    position: relative;
+    width: 100%;
+    height: 25vw;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery_overlay{
+    width: 30%;
+    height: 100%;
+    background-color: #46705ca9;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery 
+.gallery_section{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 20%;
+    left: 30%;
+    width: 60%;
+    height: 15vw;
+    background-color: #ffff;
+}
+
+.gallery_photo{
+    display: flex;
+    gap: 1vw;
+}
+
+.gallery 
+.gallery_selection{
+    width: 15vw;
+    height: 10vw;
+}
+
+.gallery 
+.gallery_selection:nth-child(n+4){
+    display: none;
+}
+
+.gallery_selection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gallery_section
+.gallery_button a{
+    text-decoration: none;
+    padding: 1vw;
+    background-color: #46705C;
+    color: #ffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery_section
+.gallery_button a:hover{
+    background-color: #515151;
 }
 
 .activity{
@@ -600,7 +759,7 @@ a{
 }
 
 .button_slider button{
-    background-color: #159A59;
+    background-color: #46705C;
     color: #fff;
     border: none;
     width: 10vw;
@@ -650,7 +809,7 @@ button{
 }
 
 footer{
-    padding: 5vw;
+    padding: 1vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -723,25 +882,71 @@ footer .left .socmed_icon a{
 }
 
 /* About */
+
+.bg_about{
+    position: relative;
+    width: 100%;
+    height: 15vw;
+}
+
+.overlay_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(3, 112, 18, 0.588),rgba(0, 0, 0, 0));
+}
+
+.bg_about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .container_about{
     margin: 2vw auto;
     width: 80%;
     display: grid;
     grid-template-areas: "about_one about_two";
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    min-height: max-content;
+}
+
+.about_content
+.tittle_content_about{
+    width: 80%;
+    margin: 2vw auto;
+}
+
+.about_content
+.tittle_content_about
+.tittle_about{
+    background-image: linear-gradient(0deg, transparent 50%, #159A59 50%);
+    background-size: 30% 5px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    display: inline-block;
+    padding-bottom: 3px;
 }
 
 .container_about .about_one{
+    grid-area: about_one;
     text-indent: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: justify;
+}
+
+.container_about
+.about_one img{
+    display: block;
+    margin: 0 auto;
 }
 
 .container_about .about_two{
+    grid-area: about_two;
+    text-align: justify;
 }
 
 .about_one img{
@@ -757,6 +962,7 @@ footer .left .socmed_icon a{
     width: 100%;
     position: relative;
     background-color: #dcdcdc1f;
+    text-align: justify;
 }
 
 .visi .logo_section{
@@ -768,6 +974,7 @@ footer .left .socmed_icon a{
 .visi .logo_section img{
     width: auto;
     height: 30vw;
+    opacity: 0.3;
 }
 
 .visi
@@ -794,14 +1001,39 @@ footer .left .socmed_icon a{
 
 .container_visi
 .content_visi{
-    width :50% ;
+    width :70%;
     display: flex;
     flex-direction: column;
 }
 
 .container_misi
 .content_misi{
-    width :50%;
+    width :70%;
     display: flex;
     flex-direction: column;
+}
+
+/* Gallery */
+.container_gallery{
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.container_gallery
+.gallery_content{
+    width: 30%;
+    height: 20vw;
+}
+
+.gallery_content
+img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 5px;
+    border: 1px solid #46705C;
 }

@@ -7,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Yayasan Nursyifa</title>
 </head>
 
 <body>
-    <nav>
-        <div class="header">
-            <div class="content_header">
-                <p>Yayasan Nursyifa - Samarinda - Kalimantan Timur</p>
-                <a href="<?php echo base_url('login') ?>">Admin</a>
+    <nav class="header">
+        <div class="content_header">
+            <div class="image_logo">
+                <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
             </div>
+            <p>Yayasan Nur Assyifa - Samarinda - Kalimantan Timur</p>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,10 +29,10 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('/') ?>">Home</a>
+                        <a class="nav-link text-white" href="<?php echo base_url('/') ?>">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -41,16 +43,17 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Gallery
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#activity">Foto Kegiatan</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/gallery') ?>">Foto Kegiatan</a>
+                            </li>
                             <li><a class="dropdown-item" href="#">Sumbangsih</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Keanggotaan
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,7 +61,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer">Contact</a>
+                        <a class="nav-link text-white" href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -68,20 +71,19 @@
     <div class="carousel_home" id="profile">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="bg-black"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="bg-black"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-light" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="bg-light"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="<?php echo base_url('assets/images/Anggota.jpeg') ?>" class="d-block w-100" alt="...">
-                    <div class="image_overlay"></div>
-                    <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-xl-5">
-                        <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
-                        <p style="font-size: xx-large; font-weight: bold; font-family: 'Poppins', sans-serif;" class="text-dark w-90">
-                            Selamat Datang di <span class="text-success">Yayasan Nursyifa</span>, membangun negeri untuk
+                    <img src="<?php echo base_url('assets/images/Home.jpeg') ?>" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-xl-5 h-100">
+                        <p style="font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
+                            Selamat Datang di Yayasan Nur Assyifa
+                            membangun negeri
+                            untuk
                             Indonesia</p>
-                        <p class="text-dark">KETUA Dr.H Abdul Hams N. Sp. AM. <br>PEMBINA Dr.Handy Wiradharm Sp.OG.</p>
+                        <a>Tentang Kami <i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -92,70 +94,32 @@
                         <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="<?php echo base_url('assets/images/Anggota.jpeg') ?>" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon bg-dark border-primary rounded" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon bg-dark border-primary rounded" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
 
-    <div class="visi">
-        <div class="tittle_visi">
-            <h2>VISI & MISI YAYASAN</h2>
-        </div>
-
-        <div class="container_visi" id="visi_misi">
-            <div class="section_content">
-                <img src="<?= base_url('assets/images/Ellipse 3.png') ?>" alt="">
-            </div>
-            <div class="content_visi">
-                <h3>Visi</h3>
-                <p>Menjadi Lembaga Dakwah dan Pendidikan Islam terkemuka dan modern dalam mencerahkan dan mencerdaskan
-                    kehidupan
-                    bangsa guna membentuk masyarakat Indonesia yang beriman, berilmu, beramal, dan bertaqwa menuju izzul
-                    Islam wal
-                    muslimin</p>
+    <div class="visi_misi">
+        <div class="visi_nav">
+            <i class="fas fa-eye"></i>
+            <div class="visi_text">
+                <h1>Visi</h1>
+                <a href="<?php echo base_url('/about') ?>">Selengkapnya</a>
             </div>
         </div>
-
-        <div class="container_misi">
-            <div class="section_content">
-                <img src="<?= base_url('assets/images/Ellipse 3.png') ?>" alt="">
+        <div class="misi_nav">
+            <i class="fas fa-bullseye"></i>
+            <div class="misi_text">
+                <h1>Misi</h1>
+                <a href="<?php echo base_url('/about') ?>">Selengkapnya</a>
             </div>
-            <div class="content_misi">
-                <h3>Misi</h3>
-                <ul>
-                    <li>Membina dan mengembangkan dakwah dan pendidikan Islam dalam arti yang seluar-luasnya dengan
-                        semangat amar
-                        makruf nahi munkar.</li>
-                    <li>Mengawal dan membela aqidah Islamiyah berdasarkan Al-Qurân dan Sunnah Rasul.</li>
-                    <li>Menegakan nilai-nilai kemanusiaan sesuai ajaran islam demi kesejahteraan umat dan bangsa lahir
-                        dan batin.
-                    </li>
-                    <li>Meningkatkan kualitas SDM guna mewujudkan masyarakat yang beriman, berilmu, beramal, dan
-                        bertaqwa melalui
-                        pengembangan kegiatan yang meningkatkan IMTAQ dan IPTEK sesuai ajaran aqidah islam.</li>
-                    <li>Mendorong terwujudnya persatuan dan kesatuan umat untuk kesejahteraan seluruh rakyat Indonesia.
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="logo_section">
-            <div class="image_overlay"></div>
-            <img src="<?= base_url('assets/images/logo2.png') ?>" alt="">
         </div>
     </div>
 
@@ -163,6 +127,25 @@
         <h1>Struktur Organisasi</h1>
         <div class="struktur">
             <img src="<?= base_url('assets/images/struktur_organisasi 1.png') ?>" alt="">
+        </div>
+    </div>
+
+    <div class="gallery">
+        <img src="<?= base_url('assets/images/bg.jpg') ?>" alt="">
+        <div class="gallery_overlay">
+            <h1 class="text_white">Gallery</h1>
+        </div>
+        <div class="gallery_section">
+            <div class="gallery_photo">
+                <?php foreach ($tampil as $k) : ?>
+                    <div class="gallery_selection">
+                        <img src="<?= base_url() . "/assets/images/" . $k['gambar']; ?>" alt="">
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="gallery_button">
+                <a href="<?php echo base_url('/gallery') ?>">Selengkapnya</a>
+            </div>
         </div>
     </div>
 

@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <nav>
-        <div class="header">
-            <div class="content_header">
-                <p>Yayasan Nursyifa - Samarinda - Kalimantan Timur</p>
-                <a href="<?php echo base_url('/') ?>">Home</a>
+    <nav class="header">
+        <div class="content_header">
+            <div class="image_logo">
+                <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
             </div>
+            <p>Yayasan Nur Assyifa - Samarinda - Kalimantan Timur</p>
         </div>
     </nav>
 

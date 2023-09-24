@@ -11,15 +11,16 @@
 </head>
 
 <body>
-    <nav>
-        <div class="header">
-            <div class="content_header">
-                <p>Yayasan Nur Assyifa - Samarinda - Kalimantan Timur</p>
-                <a href="<?php echo base_url('login') ?>">Admin</a>
+    <nav class="header">
+        <div class="content_header">
+            <div class="image_logo">
+                <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
             </div>
+            <p>Yayasan Nur Assyifa - Samarinda - Kalimantan Timur</p>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,10 +28,10 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('/') ?>">Home</a>
+                        <a class="nav-link text-white" href="<?php echo base_url('/') ?>">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -41,7 +42,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Gallery
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -50,7 +51,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Keanggotaan
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,38 +59,51 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer">Contact</a>
+                        <a class="nav-link text-white" href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container_about">
-        <h1 class="tittle_content_about">Salam Sambutan</h1>
-        <br>
-        <div class="about_one">
-            <p>Segala Puji bagi Allah Subhanahu wa ta’ala yang telah memberikan rahmat dan karunia-Nya kepada kami untuk
-                mendirikan Yayasan Nur Assyifa Samarinda (Nasda) pada tanggal 4 April 2022. Yayasan Nasda melalui
-                Komunitas Dokter Berbagi merupakan sebuah yayasan yang bergerak di bidang keagamaan, sosial dan
-                kemanusiaan. Sebuah komunitas yang keanggotaannya terdiri dari dokter maupun non-dokter dengan tujuan
-                sebagai wadah berbagi dan membantu masyarakat.</p>
-            <img src="<?= base_url('assets/images/sambutan ketua.jpg') ?>" alt="">
+    <div class="about_content">
+        <div class="bg_about">
+            <div class="overlay_bg"></div>
+            <img src="<?= base_url('assets/images/bg.jpg') ?>" alt="">
         </div>
-        <div class="about_two">
-            <p>Memasuki tahun kedua didirikan, Yayasan Nur Assyifa Samarinda (Nasda) telah mendirikan TPQ Nurul Qur’an
-                yang peresmiannya dilakukan pada tanggal 21 Desember 2022. Selain itu, Yayasan Nasda telah melakukan
-                beberapa kegiatan yang akan kami uraikan kemudian.</p>
-            <p>Kami berharap semoga itikad baik kami diberikan kemudahan dalam melaksanakan kegiatan dan program kerja
-                sehingga kami dapat menebar kebaikan sebanyak-banyaknya dan seluas-luasnya. Kamipun mengetuk hati dan
-                mengajak seluruh kaum muslimin untuk ikut serta dalam menyukseskan program-program kami dengan turut
-                serta berdonasi atau berkontribusi.</p>
-            <p>Semoga Allah memberikan taufiq dan hidayah-Nya kepada kita semua untuk saling tolong-menolong dalam
-                kebaikan. Semoga amal kita menjadi pemberat timbangan kebaikan di hari kiamat kelak. Amin.</p>
-            <br>
-            <br>
-            <p><i>Ketua Yayasan Nur Assyifa Samarinda</i></p>
-            <p style="font-weight: bold;">dr. Abdul Haris Nur, Sp.An-TI</p>
+        <div class="tittle_content_about">
+            <h1 class="tittle_about">Salam Sambutan</h1>
+        </div>
+
+        <div class="container_about">
+            <div class="about_one">
+                <p>Segala Puji bagi Allah Subhanahu wa ta’ala yang telah memberikan rahmat dan karunia-Nya kepada kami
+                    untuk
+                    mendirikan Yayasan Nur Assyifa Samarinda (Nasda) pada tanggal 4 April 2022. Yayasan Nasda melalui
+                    Komunitas Dokter Berbagi merupakan sebuah yayasan yang bergerak di bidang keagamaan, sosial dan
+                    kemanusiaan. Sebuah komunitas yang keanggotaannya terdiri dari dokter maupun non-dokter dengan
+                    tujuan
+                    sebagai wadah berbagi dan membantu masyarakat.</p>
+                <img src="<?= base_url('assets/images/sambutan ketua.jpg') ?>" alt="">
+            </div>
+            <div class="about_two">
+                <p>Memasuki tahun kedua didirikan, Yayasan Nur Assyifa Samarinda (Nasda) telah mendirikan TPQ Nurul
+                    Qur’an
+                    yang peresmiannya dilakukan pada tanggal 21 Desember 2022. Selain itu, Yayasan Nasda telah melakukan
+                    beberapa kegiatan yang akan kami uraikan kemudian.</p>
+                <p>Kami berharap semoga itikad baik kami diberikan kemudahan dalam melaksanakan kegiatan dan program
+                    kerja
+                    sehingga kami dapat menebar kebaikan sebanyak-banyaknya dan seluas-luasnya. Kamipun mengetuk hati
+                    dan
+                    mengajak seluruh kaum muslimin untuk ikut serta dalam menyukseskan program-program kami dengan turut
+                    serta berdonasi atau berkontribusi.</p>
+                <p>Semoga Allah memberikan taufiq dan hidayah-Nya kepada kita semua untuk saling tolong-menolong dalam
+                    kebaikan. Semoga amal kita menjadi pemberat timbangan kebaikan di hari kiamat kelak. Amin.</p>
+                <br>
+                <br>
+                <p><i>Ketua Yayasan Nur Assyifa Samarinda</i></p>
+                <p style="font-weight: bold;">dr. Abdul Haris Nur, Sp.An-TI</p>
+            </div>
         </div>
     </div>
 
@@ -129,7 +143,6 @@
         </div>
 
         <div class="logo_section">
-            <div class="image_overlay"></div>
             <img src="<?= base_url('assets/images/logo2.png') ?>" alt="">
         </div>
     </div>
