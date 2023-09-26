@@ -17,7 +17,7 @@
             <div class="image_logo">
                 <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
             </div>
-            <p>Yayasan Nur Assyifa - Samarinda - Kalimantan Timur</p>
+            <p>Yayasan Nur Assyifa Samarinda</p>
         </div>
     </nav>
 
@@ -77,25 +77,25 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="<?php echo base_url('assets/images/Home.jpeg') ?>" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('assets/images/Home1.jpeg') ?>" class="" alt="...">
                     <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-xl-5 h-100">
                         <p style="font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
                             Selamat Datang di Yayasan Nur Assyifa
                             membangun negeri
                             untuk
                             Indonesia</p>
-                        <a>Tentang Kami <i class="fas fa-angle-double-right"></i></a>
+                        <a href="<?php echo base_url('/about') ?>" style="text-decoration: none;">Tentang Kami <i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php echo base_url('assets/images/Home2.jpeg') ?>" class="d-block w-100" alt="...">
+                    <img src="<?php echo base_url('assets/images/Home2.jpeg') ?>" class="" alt="...">
                     <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-xl-5 h-100">
                         <p style="font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
                             Selamat Datang di Yayasan Nur Assyifa
                             membangun negeri
                             untuk
                             Indonesia</p>
-                        <a>Tentang Kami <i class="fas fa-angle-double-right"></i></a>
+                        <a href="<?php echo base_url('/about') ?>" style="text-decoration: none;">Tentang Kami <i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -128,9 +128,9 @@
     </div>
 
     <div class="struktur_organisasi" id="struktur_organisasi">
-        <h1>Struktur Organisasi</h1>
+        <h1 class="tittle_struktur">Struktur Organisasi</h1>
         <div class="struktur">
-            <img src="<?= base_url('assets/images/struktur_organisasi 1.png') ?>" alt="">
+            <img src="<?= base_url('assets/images/struktur.png') ?>" alt="">
         </div>
     </div>
 
@@ -155,13 +155,13 @@
 
     <div class="youtube_content">
         <div class="youtube_frame">
-            <iframe src="https://www.youtube.com/embed/72ECTLKS_pQ"></iframe>
+            <iframe src="https://www.youtube.com/embed/NENhpHKmzT8"></iframe>
         </div>
         <div class="youtube_frame">
-            <iframe src="https://www.youtube.com/embed/72ECTLKS_pQ"></iframe>
+            <iframe src="https://www.youtube.com/embed/NENhpHKmzT8"></iframe>
         </div>
         <div class="youtube_frame">
-            <iframe src="https://www.youtube.com/embed/72ECTLKS_pQ"></iframe>
+            <iframe src="https://www.youtube.com/embed/NENhpHKmzT8"></iframe>
         </div>
     </div>
 
@@ -195,7 +195,7 @@
 
     <div class="partnership">
         <div class="tittle_partnership">
-            <h1>Bekerja sama dengan</h1>
+            <h1 class="text_white">Bekerja sama dengan</h1>
         </div>
         <div class="image_partnership">
             <img src="<?= base_url('assets/images/image 2.png') ?>" alt="">
@@ -211,7 +211,7 @@
         <div class="image_join">
             <img src="<?= base_url('assets/images/qr.png') ?>" alt="">
         </div>
-        <a href="https://bit.ly/gabunganggotayayasannursyifa" target="_blank">bit.ly/gabunganggotayayasannursyifa
+        <a href="https://bit.ly/gabunganggotayayasannursyifa" target="_blank">Bergabung
         </a>
     </div>
 
@@ -244,7 +244,7 @@
         </div>
         <div class="middle">
             <ul>
-                <h5>About Us</h5>
+                <h5 class="text_white">About Us</h5>
                 <li><a href="">Profil</a></li>
                 <li><a href="">Struktur Organisasi</a></li>
                 <li><a href="">Visi Misi</a></li>
@@ -253,15 +253,15 @@
         </div>
         <div class="right">
             <ul>
-                <h5>Keanggotaan</h5>
+                <h5 class="text_white">Keanggotaan</h5>
                 <li><a href="">Mari bergabung dengan kami.</a></li>
                 <br>
-                <li><a href="">0877-3152-3378</a></li>
+                <li><a href=""><i class="fas fa-phone"></i> 0877-3152-3378</a></li>
             </ul>
         </div>
 
         <div class="footer_copyright">
-            <p>&copy; 2023 Yayasan Nur Assyifa. Hak Cipta Dilindungi.</p>
+            <p>&copy; 2023 Yayasan Nur Assyifa.</p>
         </div>
     </footer>
 

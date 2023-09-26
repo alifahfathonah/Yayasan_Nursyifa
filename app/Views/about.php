@@ -16,7 +16,7 @@
             <div class="image_logo">
                 <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
             </div>
-            <p>Yayasan Nur Assyifa - Samarinda - Kalimantan Timur</p>
+            <p>Yayasan Nur Assyifa Samarinda</p>
         </div>
     </nav>
 
