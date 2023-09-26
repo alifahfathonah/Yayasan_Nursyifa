@@ -46,7 +46,8 @@
                             Gallery
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#activity">Foto Kegiatan</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/gallery') ?>">Foto Kegiatan</a>
+                            </li>
                             <li><a class="dropdown-item" href="#">Sumbangsih</a></li>
                         </ul>
                     </li>
@@ -55,7 +56,8 @@
                             Keanggotaan
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#joinqr">Cara Berpartisipasi</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#joinqr">Cara
+                                    Berpartisipasi</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -65,6 +67,7 @@
             </div>
         </div>
     </nav>
+
 
     <div class="about_content">
         <div class="bg_about">
@@ -175,7 +178,6 @@
             </ul>
         </div>
         <div class="middle">
-
             <ul>
                 <h5>About Us</h5>
                 <li><a href="">Profil</a></li>
@@ -191,6 +193,10 @@
                 <br>
                 <li><a href="">0877-3152-3378</a></li>
             </ul>
+        </div>
+
+        <div class="footer_copyright">
+            <p>&copy; 2023 Yayasan Nur Assyifa. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 

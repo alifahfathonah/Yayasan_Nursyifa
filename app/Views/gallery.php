@@ -51,7 +51,8 @@
                             Gallery
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#activity">Foto Kegiatan</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#activity">Foto Kegiatan</a>
+                            </li>
                             <li><a class="dropdown-item" href="#">Sumbangsih</a></li>
                         </ul>
                     </li>
@@ -60,7 +61,8 @@
                             Keanggotaan
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#joinqr">Cara Berpartisipasi</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#joinqr">Cara
+                                    Berpartisipasi</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -81,34 +83,36 @@
         </div>
 
         <div class="container_gallery">
-            <?php foreach ($tampil as $k) : ?>
-                <div class="gallery_content">
-                    <img src="<?= base_url() . "/assets/images/" . $k['gambar']; ?>" onclick="showImageModal(1)">
+
+            <?php foreach ($images as $image) : ?>
+                <div class="mb-2 gallery_content">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal<?= $image['id'] ?>">
+                        <img src="<?= base_url() . "/assets/images/" . $image['gambar']; ?>" alt="Gambar" class="img-thumbnail img-fluid">
+                    </a>
                 </div>
-            <?php endforeach; ?>
+            <?php endforeach ?>
+
+
+            <!-- Modal for Each Image -->
+            <?php foreach ($images as $image) : ?>
+                <div class="modal fade" id="imageModal<?= $image['id'] ?>" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="<?= base_url() . "/assets/images/" . $image['gambar']; ?>" alt="Gambar" class="img-fluid">
+                            </div>
+                            <div class="modal-footer">
+                                <h5 class="modal-title" id="imageModalLabel"><?= $image['deskripsi'] ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach ?>
         </div>
     </div>
-
-    <script>
-        function showImageModal(id) {
-            $.ajax({
-                url: "<?= base_url('assets/images/') ?>" + id,
-                type: 'GET',
-                dataType: 'json',
-                success: function(response) {
-                    const imageUrl = "<?= base_url('/assets/images/') ?>" + response.image_data
-                        .nama_file_gambar;
-                    $('#modalImage').attr('src', imageUrl);
-                    $('#imageModal').show();
-                }
-            });
-        }
-
-        function closeImageModal() {
-            $('#modalImage').attr('src', '');
-            $('#imageModal').hide();
-        };
-    </script>
 
     <footer id="footer">
         <div class="left">

@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\data_model;
+use App\Models\GalleryModel;
 
 class Home extends BaseController
 {
@@ -26,11 +27,10 @@ class Home extends BaseController
 
     public function gallery()
     {
-        $tampil = $this->data_model->findAll();
-        $data = [
-            'title' => 'Daftar Aduan',
-            'tampil' => $tampil
-        ];
+        $galleryModel = new GalleryModel();
+        $data['images'] = $galleryModel->findAll();
+        // // Mengambil semua gambar dari tabel gallery
+
         return view('gallery', $data);
     }
 

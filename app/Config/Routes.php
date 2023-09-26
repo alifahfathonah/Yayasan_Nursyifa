@@ -32,6 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::utama');
 $routes->get('/about', 'About::about');
 $routes->get('/gallery', 'Home::gallery');
+// $routes->get('/gallery', 'Gallery::viewgallery');
 
 $routes->get('/dashboard', 'Home::dashboard');
 $routes->get('/upload', 'Home::upload');

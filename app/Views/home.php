@@ -57,7 +57,8 @@
                             Keanggotaan
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#joinqr">Cara Berpartisipasi</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#joinqr">Cara
+                                    Berpartisipasi</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -87,11 +88,14 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php echo base_url('assets/images/Anggota.jpeg') ?>" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex d-md-block">
-                        <img src="<?= base_url('assets/images/logo.png') ?>" alt="">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                    <img src="<?php echo base_url('assets/images/Home2.jpeg') ?>" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-xl-5 h-100">
+                        <p style="font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
+                            Selamat Datang di Yayasan Nur Assyifa
+                            membangun negeri
+                            untuk
+                            Indonesia</p>
+                        <a>Tentang Kami <i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -149,18 +153,15 @@
         </div>
     </div>
 
-    <div class="program_kerja" id="program_kerja">
-        <div class="program_kerja_content">
-            <h1>Program Kerja</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eos culpa cupiditate aperiam soluta, qui
-                dolore
-                nesciunt eum iure assumenda, repellat, repudiandae possimus dolor vero tempora iusto molestias
-                reprehenderit
-                odio?</p>
-            <a href="">Selengkapnya</a>
+    <div class="youtube_content">
+        <div class="youtube_frame">
+            <iframe src="https://www.youtube.com/embed/72ECTLKS_pQ"></iframe>
         </div>
-        <div class="program_kerja_img">
-            <img src="<?= base_url('assets/images/Desain tanpa judul.png') ?>" alt="">
+        <div class="youtube_frame">
+            <iframe src="https://www.youtube.com/embed/72ECTLKS_pQ"></iframe>
+        </div>
+        <div class="youtube_frame">
+            <iframe src="https://www.youtube.com/embed/72ECTLKS_pQ"></iframe>
         </div>
     </div>
 
@@ -210,8 +211,7 @@
         <div class="image_join">
             <img src="<?= base_url('assets/images/qr.png') ?>" alt="">
         </div>
-        <a href="https://bit.ly/gabunganggotayayasannursyifa" target="_blank">
-            <button>bit.ly/gabunganggotayayasannursyifa</button>
+        <a href="https://bit.ly/gabunganggotayayasannursyifa" target="_blank">bit.ly/gabunganggotayayasannursyifa
         </a>
     </div>
 
@@ -243,7 +243,6 @@
             </ul>
         </div>
         <div class="middle">
-
             <ul>
                 <h5>About Us</h5>
                 <li><a href="">Profil</a></li>
@@ -259,6 +258,10 @@
                 <br>
                 <li><a href="">0877-3152-3378</a></li>
             </ul>
+        </div>
+
+        <div class="footer_copyright">
+            <p>&copy; 2023 Yayasan Nur Assyifa. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 

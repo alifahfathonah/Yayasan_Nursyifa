@@ -582,9 +582,7 @@ img{
 }
 
 .struktur_organisasi{
-    padding-top: 5vw;
-    width: 90%;
-    margin: 0 auto;
+    margin: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -594,29 +592,6 @@ img{
 .struktur_organisasi
 .struktur img{
     max-width: 100%;
-    height: auto;
-}
-
-.program_kerja{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.program_kerja
-.program_kerja_content{
-    width: 50%;
-}
-
-.program_kerja
-.program_kerja_content a{
-    text-decoration: none;
-    color: #159A59;
-}
-
-.program_kerja .program_kerja_img img{
-    width:35vw;
     height: auto;
 }
 
@@ -695,10 +670,32 @@ img{
     background-color: #515151;
 }
 
+.youtube_content{
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.youtube_content
+.youtube_frame iframe{
+    border-radius: 10px;
+}
+
 .activity{
     padding: 5vw;
 }
 
+.activity
+.tittle_activity{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity
 .slider-container {
     width: 100%;
     overflow: hidden;
@@ -799,16 +796,17 @@ img{
 }
 
 .joinqr
-button{
+a{
     background-color: #159A59;
     color: #fff;
     border: none;
-    height: 4vw;
     padding: 1vw;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 footer{
+    background-color: #46705C;
     padding: 1vw;
     display: flex;
     flex-wrap: wrap;
@@ -828,7 +826,7 @@ footer
 }
 
 footer .left ul li{
-    color: #515151;
+    color: #ffff;
 }
 
 footer .middle, .right{
@@ -838,7 +836,7 @@ footer .middle, .right{
 footer
 .left li a, .middle li a, .right li a{
     text-decoration: none;
-    color: #515151;
+    color: #ffff;
 }
 
 footer
@@ -859,7 +857,13 @@ footer .left .socmed_icon
 }
 
 footer .left .socmed_icon a{
-    color: #000;
+    color: #ffff;
+}
+
+.footer_copyright{
+    width: 100%;
+    text-align: center;
+    color: #ffff;
 }
 
 /* Our Activity */
@@ -1036,4 +1040,17 @@ img{
     object-fit:cover;
     border-radius: 5px;
     border: 1px solid #46705C;
+}
+
+@media (max-width: 768px) {
+    .container_gallery {
+        width: 100% !important; /* Mengisi lebar penuh pada layar seluler */
+        padding: 0 2vw; /* Padding untuk menjaga jarak dari tepi */
+    }
+
+    .gallery_content {
+        width: 100% !important;
+        height: max-content !important; /* Satu kolom per baris pada layar seluler */
+        padding: 2vw 0; /* Padding atas dan bawah untuk jarak vertikal */
+    }
 }

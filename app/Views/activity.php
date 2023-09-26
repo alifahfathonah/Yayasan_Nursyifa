@@ -111,7 +111,6 @@
             </ul>
         </div>
         <div class="middle">
-
             <ul>
                 <h5>About Us</h5>
                 <li><a href="">Profil</a></li>
@@ -127,6 +126,10 @@
                 <br>
                 <li><a href="">0877-3152-3378</a></li>
             </ul>
+        </div>
+
+        <div class="footer_copyright">
+            <p>&copy; 2023 Yayasan Nur Assyifa. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 
