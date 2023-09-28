@@ -8,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Yayasan Nursyifa</title>
+    <link rel="icon" href="<?= base_url('assets/images/logo.png'); ?>" type="image/x-icon">
+    <title>Yayasan Nur Assyifa</title>
 </head>
 
 <body>
@@ -78,7 +79,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="<?php echo base_url('assets/images/Home1.jpeg') ?>" class="" alt="...">
-                    <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-xl-5 h-100">
+                    <div class="carousel-caption d-lg-flex flex-column align-items-center gap-l-5 h-100">
                         <p style="font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
                             Selamat Datang di Yayasan Nur Assyifa
                             membangun negeri
@@ -89,7 +90,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="<?php echo base_url('assets/images/Home2.jpeg') ?>" class="" alt="...">
-                    <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-xl-5 h-100">
+                    <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-l-5 h-100">
                         <p style="font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
                             Selamat Datang di Yayasan Nur Assyifa
                             membangun negeri
@@ -199,8 +200,8 @@
         </div>
         <div class="image_partnership">
             <img src="<?= base_url('assets/images/image 2.png') ?>" alt="">
-            <img src="<?= base_url('assets/images/image 3.png') ?>" alt="">
-            <img src="<?= base_url('assets/images/image 4.png') ?>" alt="">
+            <img src="<?= base_url('assets/images/image_3.png') ?>" alt="">
+            <img src="<?= base_url('assets/images/image_4.png') ?>" alt="">
         </div>
     </div>
 
@@ -209,9 +210,9 @@
             <h1>Mari bergabung bersama kami</h1>
         </div>
         <div class="image_join">
-            <img src="<?= base_url('assets/images/qr.png') ?>" alt="">
+            <img src="<?= base_url('assets/images/qrcode.png') ?>" alt="">
         </div>
-        <a href="https://bit.ly/gabunganggotayayasannursyifa" target="_blank">Bergabung
+        <a href="https://api.whatsapp.com/send?phone=08115813345" target="_blank">Klik untuk bergabung
         </a>
     </div>
 
@@ -219,25 +220,15 @@
         <div class="left">
             <img src="<?= base_url('assets/images/logo.png') ?>" alt="">
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat quasi itaque fugit
-                    similique animi
-                    pariatur! Cumque temporibus in, magni, vero aperiam voluptatibus expedita error eaque autem,
-                    veritatis
-                    assumenda consequuntur?</li>
+                <li>Selamat datang di website resmi <br> Yayasan Nur Assyifa - Samarinda - Kalimantan timur</li>
                 <li>
                     <div class="socmed_icon">
-                        <a href="https://www.instagram.com/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.facebook.com/">
-                            <i class="fab fa-facebook"></i>
-                        </a> <!-- Ikon Facebook -->
-                        <a href="https://www.linkedin.com/">
-                            <i class="fab fa-linkedin"></i>
-                        </a> <!-- Ikon LinkedIn -->
-                        <a href="https://www.instagram.com/">
+                        <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
                             <i class="fab fa-instagram"></i>
-                        </a><!-- Ikon Instagram -->
+                        </a>
+                        <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -254,9 +245,10 @@
         <div class="right">
             <ul>
                 <h5 class="text_white">Keanggotaan</h5>
-                <li><a href="">Mari bergabung dengan kami.</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=08115813345">Mari bergabung dengan kami.</a></li>
                 <br>
-                <li><a href=""><i class="fas fa-phone"></i> 0877-3152-3378</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=08115813345"><i class="fas fa-phone"></i>
+                        (+62) 811 - 5813 - 345</a></li>
             </ul>
         </div>
 

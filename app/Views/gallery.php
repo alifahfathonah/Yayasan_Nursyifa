@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="<?= base_url('assets/images/logo.png'); ?>" type="image/x-icon">
     <title>Yayasan Nursyifa</title>
 </head>
 
@@ -118,33 +119,22 @@
         <div class="left">
             <img src="<?= base_url('assets/images/logo.png') ?>" alt="">
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat quasi itaque fugit
-                    similique animi
-                    pariatur! Cumque temporibus in, magni, vero aperiam voluptatibus expedita error eaque autem,
-                    veritatis
-                    assumenda consequuntur?</li>
+                <li>Selamat datang di website resmi <br> Yayasan Nur Assyifa - Samarinda - Kalimantan timur</li>
                 <li>
                     <div class="socmed_icon">
-                        <a href="https://www.instagram.com/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.facebook.com/">
-                            <i class="fab fa-facebook"></i>
-                        </a> <!-- Ikon Facebook -->
-                        <a href="https://www.linkedin.com/">
-                            <i class="fab fa-linkedin"></i>
-                        </a> <!-- Ikon LinkedIn -->
-                        <a href="https://www.instagram.com/">
+                        <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
                             <i class="fab fa-instagram"></i>
-                        </a><!-- Ikon Instagram -->
+                        </a>
+                        <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="middle">
-
             <ul>
-                <h5>About Us</h5>
+                <h5 class="text_white">About Us</h5>
                 <li><a href="">Profil</a></li>
                 <li><a href="">Struktur Organisasi</a></li>
                 <li><a href="">Visi Misi</a></li>
@@ -153,11 +143,16 @@
         </div>
         <div class="right">
             <ul>
-                <h5>Keanggotaan</h5>
-                <li><a href="">Mari bergabung dengan kami.</a></li>
+                <h5 class="text_white">Keanggotaan</h5>
+                <li><a href="https://api.whatsapp.com/send?phone=08115813345">Mari bergabung dengan kami.</a></li>
                 <br>
-                <li><a href="">0877-3152-3378</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=08115813345"><i class="fas fa-phone"></i>
+                        (+62) 811 - 5813 - 345</a></li>
             </ul>
+        </div>
+
+        <div class="footer_copyright">
+            <p>&copy; 2023 Yayasan Nur Assyifa.</p>
         </div>
     </footer>
 

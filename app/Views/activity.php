@@ -11,15 +11,16 @@
 </head>
 
 <body>
-    <nav>
-        <div class="header">
-            <div class="content_header">
-                <p>Yayasan Nursyifa - Samarinda - Kalimantan Timur</p>
-                <a href="<?php echo base_url('login') ?>">Login</a>
+    <nav class="header">
+        <div class="content_header">
+            <div class="image_logo">
+                <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
             </div>
+            <p>Yayasan Nur Assyifa Samarinda</p>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,33 +28,31 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('/') ?>">Home</a>
+                        <a class="nav-link text-white" href="<?php echo base_url('/') ?>">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#profile">Profile</a></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#struktur_organisasi">Struktur
-                                    Organisasi</a></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#visi_misi">Visi-Misi</a></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#program_kerja">Program
-                                    Kerja</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/about') ?>">Profile</a></li>
+                            <li><a class="dropdown-item" href="#struktur_organisasi">Struktur Organisasi</a></li>
+                            <li><a class="dropdown-item" href="#visi_misi">Visi-Misi</a></li>
+                            <li><a class="dropdown-item" href="#program_kerja">Program Kerja</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Gallery
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#activity">Foto Kegiatan</a>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/gallery') ?>">Foto Kegiatan</a>
                             </li>
                             <li><a class="dropdown-item" href="#">Sumbangsih</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Keanggotaan
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -62,7 +61,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer">Contact</a>
+                        <a class="nav-link text-white" href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -87,32 +86,22 @@
         <div class="left">
             <img src="<?= base_url('assets/images/logo.png') ?>" alt="">
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat quasi itaque fugit
-                    similique animi
-                    pariatur! Cumque temporibus in, magni, vero aperiam voluptatibus expedita error eaque autem,
-                    veritatis
-                    assumenda consequuntur?</li>
+                <li>Selamat datang di website resmi <br> Yayasan Nur Assyifa - Samarinda - Kalimantan timur</li>
                 <li>
                     <div class="socmed_icon">
-                        <a href="https://www.instagram.com/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.facebook.com/">
-                            <i class="fab fa-facebook"></i>
-                        </a> <!-- Ikon Facebook -->
-                        <a href="https://www.linkedin.com/">
-                            <i class="fab fa-linkedin"></i>
-                        </a> <!-- Ikon LinkedIn -->
-                        <a href="https://www.instagram.com/">
+                        <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
                             <i class="fab fa-instagram"></i>
-                        </a><!-- Ikon Instagram -->
+                        </a>
+                        <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="middle">
             <ul>
-                <h5>About Us</h5>
+                <h5 class="text_white">About Us</h5>
                 <li><a href="">Profil</a></li>
                 <li><a href="">Struktur Organisasi</a></li>
                 <li><a href="">Visi Misi</a></li>
@@ -121,15 +110,16 @@
         </div>
         <div class="right">
             <ul>
-                <h5>Keanggotaan</h5>
-                <li><a href="">Mari bergabung dengan kami.</a></li>
+                <h5 class="text_white">Keanggotaan</h5>
+                <li><a href="https://api.whatsapp.com/send?phone=08115813345">Mari bergabung dengan kami.</a></li>
                 <br>
-                <li><a href="">0877-3152-3378</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=08115813345"><i class="fas fa-phone"></i>
+                        (+62) 811 - 5813 - 345</a></li>
             </ul>
         </div>
 
         <div class="footer_copyright">
-            <p>&copy; 2023 Yayasan Nur Assyifa. Hak Cipta Dilindungi.</p>
+            <p>&copy; 2023 Yayasan Nur Assyifa.</p>
         </div>
     </footer>
 

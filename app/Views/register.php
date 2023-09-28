@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<?= base_url('assets/images/logo.png'); ?>" type="image/x-icon">
     <title>Login</title>
 </head>
 
@@ -33,13 +34,13 @@
             </div>
 
             <?php
-            if(session()->getFlashdata('error')) : ?>
-            <div class="alert aler-danger alert-dismissible fade show" role="alert">
-                <strong><?= session()->getFlashdata('error') ?></strong>
-            </div>
+            if (session()->getFlashdata('error')) : ?>
+                <div class="alert aler-danger alert-dismissible fade show" role="alert">
+                    <strong><?= session()->getFlashdata('error') ?></strong>
+                </div>
             <?php endif; ?>
 
-            <form class="form_login" action="<?= base_url('Login/register_user')?>" method="POST" role="form">
+            <form class="form_login" action="<?= base_url('Login/register_user') ?>" method="POST" role="form">
                 <?= csrf_field() ?>
                 <div class="username_login">
                     <label for="Username">Username</label>
@@ -61,9 +62,9 @@
                     <option value="1"></option>
                 </select>
                 <script>
-                var roleSelect = document.getElementById("roleSelect");
+                    var roleSelect = document.getElementById("roleSelect");
 
-                roleSelect.style.display = "none";
+                    roleSelect.style.display = "none";
                 </script>
                 <div class="button_login">
                     <button type="submit">Login</button>
