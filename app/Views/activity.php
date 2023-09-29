@@ -36,9 +36,10 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="<?php echo base_url('/about') ?>">Profile</a></li>
-                            <li><a class="dropdown-item" href="#struktur_organisasi">Struktur Organisasi</a></li>
-                            <li><a class="dropdown-item" href="#visi_misi">Visi-Misi</a></li>
-                            <li><a class="dropdown-item" href="#program_kerja">Program Kerja</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/') ?>#struktur_organisasi">Struktur
+                                    Organisasi</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/about') ?>#visi_misi">Visi-Misi</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -48,7 +49,6 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="<?php echo base_url('/gallery') ?>">Foto Kegiatan</a>
                             </li>
-                            <li><a class="dropdown-item" href="#">Sumbangsih</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -105,7 +105,7 @@
                 <li><a href="">Profil</a></li>
                 <li><a href="">Struktur Organisasi</a></li>
                 <li><a href="">Visi Misi</a></li>
-                <li><a href="">Program Kerja</a></li>
+                <li><a href="">Kegiatan Nasda</a></li>
             </ul>
         </div>
         <div class="right">

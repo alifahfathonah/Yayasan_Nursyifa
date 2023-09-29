@@ -426,14 +426,14 @@ nav {
 }
 
 .carousel-caption {
-    bottom: 0 !important;
-    left: 10% !important;
-    background-color: #084226a1;
-    width: 40%;
+    width: 100%;
+    left: 0 !important;
+    right: 0 !important;
 }
 
 .carousel-caption p {
     margin-top: 10vw;
+    color: #46705C;
 }
 
 .carousel-caption a {
@@ -1057,10 +1057,7 @@ footer .left .socmed_icon a {
     }
 
     .carousel-caption {
-        bottom: 0 !important;
-        left: 10% !important;
-        background-color: #084226a1;
-        width: 40%;
+        width: 90%;
     }
 
     .carousel-caption a {

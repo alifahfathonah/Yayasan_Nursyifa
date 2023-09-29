@@ -39,8 +39,8 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="<?php echo base_url('/about') ?>">Profile</a></li>
                             <li><a class="dropdown-item" href="#struktur_organisasi">Struktur Organisasi</a></li>
-                            <li><a class="dropdown-item" href="#visi_misi">Visi-Misi</a></li>
-                            <li><a class="dropdown-item" href="#program_kerja">Program Kerja</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('/about') ?>#visi_misi">Visi-Misi</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -50,7 +50,6 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="<?php echo base_url('/gallery') ?>">Foto Kegiatan</a>
                             </li>
-                            <li><a class="dropdown-item" href="#">Sumbangsih</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -79,19 +78,20 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="<?php echo base_url('assets/images/Home1.jpeg') ?>" class="" alt="...">
-                    <div class="carousel-caption d-lg-flex flex-column align-items-center gap-l-5 h-100">
-                        <p style="font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
+                    <div class="carousel-caption d-lg-flex flex-column align-items-center w-100 gap-l-5 h-100">
+                        <p style="font-size: 3vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
                             Selamat Datang di Yayasan Nur Assyifa
-                            membangun negeri
-                            untuk
-                            Indonesia</p>
+                            Membangun Negeri
+                            Untuk
+                            Indonesia
+                        </p>
                         <a href="<?php echo base_url('/about') ?>" style="text-decoration: none;">Tentang Kami <i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="<?php echo base_url('assets/images/Home2.jpeg') ?>" class="" alt="...">
-                    <div class="carousel-caption d-lg-flex flex-column align-items-center justify-content-center gap-l-5 h-100">
-                        <p style="font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
+                    <div class="carousel-caption d-lg-flex flex-column align-items-center w-100 gap-l-5 h-100">
+                        <p style="font-size: 3vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
                             Selamat Datang di Yayasan Nur Assyifa
                             membangun negeri
                             untuk
@@ -156,13 +156,13 @@
 
     <div class="youtube_content">
         <div class="youtube_frame">
-            <iframe src="https://www.youtube.com/embed/NENhpHKmzT8"></iframe>
+            <iframe src="https://www.youtube.com/embed/vHbrfsMlsCE"></iframe>
         </div>
         <div class="youtube_frame">
-            <iframe src="https://www.youtube.com/embed/NENhpHKmzT8"></iframe>
+            <iframe src="https://www.youtube.com/embed/ueNkRHkZC_A"></iframe>
         </div>
         <div class="youtube_frame">
-            <iframe src="https://www.youtube.com/embed/NENhpHKmzT8"></iframe>
+            <iframe src="https://www.youtube.com/embed/nvOHBRzDs4A"></iframe>
         </div>
     </div>
 
@@ -239,7 +239,7 @@
                 <li><a href="">Profil</a></li>
                 <li><a href="">Struktur Organisasi</a></li>
                 <li><a href="">Visi Misi</a></li>
-                <li><a href="">Program Kerja</a></li>
+                <li><a href="">Kegiatan Nasda</a></li>
             </ul>
         </div>
         <div class="right">
