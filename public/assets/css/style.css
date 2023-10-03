@@ -407,9 +407,13 @@ nav {
     height: 100%;
 }
 
-.content_header p {
-    margin-bottom: 0;
-    color: #46705C;
+.content_header .text_logo {
+    width: 15%;
+}
+
+.text_logo img{
+    width: 100%;
+    height: auto;
 }
 
 .navbar {
@@ -437,6 +441,7 @@ nav {
 }
 
 .carousel-caption a {
+    font-size: 1rem;
     padding: 1vw;
     border-radius: 30px;
     background-color: rgba(33, 33, 33, 0.573);
@@ -509,7 +514,7 @@ nav {
 
 .visi_nav .visi_text a:hover,
 .misi_nav .misi_text a:hover {
-    animation: swing;
+    animation: bounce;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
 }
@@ -541,7 +546,15 @@ nav {
     background-repeat: no-repeat;
     background-position: 0 100%;
     display: inline-block;
-    padding-bottom: 1vw;
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    line-height: 25px;
+}
+
+.tittle_struktur p{
+    font-family:'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #46705C;
 }
 
 .struktur_organisasi .struktur img {
@@ -681,17 +694,23 @@ nav {
 }
 
 .card img {
+    object-fit:cover !important;
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .card-body {
-    padding: 10px;
+    position: relative;
 }
 
 .card-title {
     font-size: 18px;
     font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Jumlah baris yang ingin ditampilkan */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .card-text {
@@ -750,6 +769,7 @@ nav {
 }
 
 .joinqr {
+    background-color: #46705c30;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1030,6 +1050,10 @@ footer .left .socmed_icon a {
         align-items: center;
     }
 
+    .carousel-caption p{
+        margin: 5vw auto;
+    }
+
     .content_header .image_logo {
         width: 15vw;
         height: 15vw;
@@ -1061,7 +1085,7 @@ footer .left .socmed_icon a {
     }
 
     .carousel-caption a {
-        padding: 1vw;
+        padding: 2.5vw !important;
         border-radius: 30px;
         background-color: rgba(33, 33, 33, 0.573);
         cursor: pointer;
@@ -1196,6 +1220,11 @@ footer .left .socmed_icon a {
 
     .gallery_section .gallery_button a:hover {
         background-color: #515151;
+    }
+
+    .card_images {
+        width: 100%;
+        height: 50vw;
     }
 
     .button_slider button {

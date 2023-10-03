@@ -16,7 +16,9 @@
             <div class="image_logo">
                 <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
             </div>
-            <p>Yayasan Nur Assyifa Samarinda</p>
+            <div class="text_logo">
+                <img src="<?php echo base_url('assets/images/text.png') ?>" alt="">
+            </div>
         </div>
     </nav>
 
@@ -92,8 +94,8 @@
                         <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
-                            <i class="fab fa-youtube"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100078731239022">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </div>
                 </li>

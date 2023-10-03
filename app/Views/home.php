@@ -18,7 +18,9 @@
             <div class="image_logo">
                 <img src="<?php echo base_url('assets/images/logo.png') ?>" alt="">
             </div>
-            <p>Yayasan Nur Assyifa Samarinda</p>
+            <div class="text_logo">
+                <img src="<?php echo base_url('assets/images/text.png') ?>" alt="">
+            </div>
         </div>
     </nav>
 
@@ -129,7 +131,11 @@
     </div>
 
     <div class="struktur_organisasi" id="struktur_organisasi">
-        <h1 class="tittle_struktur">Struktur Organisasi</h1>
+        <div class="tittle_struktur">
+            <p style="font-size: 3em; color:black;">Struktur Kepengurusan</p>
+            <p> Nur Assyifa Samarinda</p>
+            <p> 2023 - 2028 </p>
+        </div>
         <div class="struktur">
             <img src="<?= base_url('assets/images/struktur.png') ?>" alt="">
         </div>
@@ -194,7 +200,7 @@
         </div>
     </div>
 
-    <div class="partnership">
+    <!-- <div class="partnership">
         <div class="tittle_partnership">
             <h1 class="text_white">Bekerja sama dengan</h1>
         </div>
@@ -203,14 +209,14 @@
             <img src="<?= base_url('assets/images/image_3.png') ?>" alt="">
             <img src="<?= base_url('assets/images/image_4.png') ?>" alt="">
         </div>
-    </div>
+    </div> -->
 
     <div class="joinqr" id="joinqr">
         <div class="tittle_join">
             <h1>Mari bergabung bersama kami</h1>
         </div>
         <div class="image_join">
-            <img src="<?= base_url('assets/images/qrcode.png') ?>" alt="">
+            <img src="<?= base_url('assets/images/qr.png') ?>" alt="">
         </div>
         <a href="https://api.whatsapp.com/send?phone=08115813345" target="_blank">Klik untuk bergabung
         </a>
@@ -226,8 +232,8 @@
                         <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://instagram.com/yayasannurassyifa?igshid=MzRlODBiNWFlZA==">
-                            <i class="fab fa-youtube"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100078731239022">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </div>
                 </li>
