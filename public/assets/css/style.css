@@ -436,7 +436,7 @@ nav {
 }
 
 .carousel-caption p {
-    margin-top: 10vw;
+    margin-top: 6vw;
     color: #46705C;
 }
 
@@ -514,7 +514,7 @@ nav {
 
 .visi_nav .visi_text a:hover,
 .misi_nav .misi_text a:hover {
-    animation: bounce;
+    animation: swing;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
 }
@@ -532,7 +532,13 @@ nav {
     flex-direction: column;
 }
 
+.struktur_pengurus{
+    width: 100%;
+    background-color: #46705C;
+}
+
 .struktur_organisasi {
+    background-color: #ffff;
     margin: 5%;
     display: flex;
     flex-direction: column;

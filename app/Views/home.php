@@ -82,11 +82,11 @@
                     <img src="<?php echo base_url('assets/images/Home1.jpeg') ?>" class="" alt="...">
                     <div class="carousel-caption d-lg-flex flex-column align-items-center w-100 gap-l-5 h-100">
                         <p style="font-size: 3vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
-                            Selamat Datang di Yayasan Nur Assyifa
-                            Membangun Negeri
-                            Untuk
-                            Indonesia
-                        </p>
+                            Selamat Datang di Yayasan Nur Assyifa Komunitas Dokter Berbagi</p>
+                        <p style="color:#46705C !important; margin-top:0; font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 45%;" class="text-light">
+                            "Jika kamu tidak dapat menjadi jalan raya Jadilah jalan setapak, tapi jalan
+                            setapak yang
+                            mengantarkan ke MATA AIR"</p>
                         <a href="<?php echo base_url('/about') ?>" style="text-decoration: none;">Tentang Kami <i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
@@ -94,10 +94,11 @@
                     <img src="<?php echo base_url('assets/images/Home2.jpeg') ?>" class="" alt="...">
                     <div class="carousel-caption d-lg-flex flex-column align-items-center w-100 gap-l-5 h-100">
                         <p style="font-size: 3vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 70%;" class="text-light">
-                            Selamat Datang di Yayasan Nur Assyifa
-                            membangun negeri
-                            untuk
-                            Indonesia</p>
+                            Selamat Datang di Yayasan Nur Assyifa Komunitas Dokter Berbagi</p>
+                        <p style="color:#46705C !important; margin-top:0; font-size: 2vw; font-weight: bold; font-family: 'Poppins', sans-serif; width: 45%;" class="text-light">
+                            "Jika kamu tidak dapat menjadi jalan raya Jadilah jalan setapak, tapi jalan
+                            setapak yang
+                            mengantarkan ke MATA AIR"</p>
                         <a href="<?php echo base_url('/about') ?>" style="text-decoration: none;">Tentang Kami <i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
@@ -130,14 +131,16 @@
         </div>
     </div>
 
-    <div class="struktur_organisasi" id="struktur_organisasi">
-        <div class="tittle_struktur">
-            <p style="font-size: 3em; color:black;">Struktur Kepengurusan</p>
-            <p> Nur Assyifa Samarinda</p>
-            <p> 2023 - 2028 </p>
-        </div>
-        <div class="struktur">
-            <img src="<?= base_url('assets/images/struktur.png') ?>" alt="">
+    <div class="struktur_pengurus">
+        <div class="struktur_organisasi" id="struktur_organisasi">
+            <div class="tittle_struktur">
+                <p style="font-size: 3em; color:black;">Struktur Kepengurusan</p>
+                <p> Yayasan Nur Assyifa Samarinda</p>
+                <p> 2023 - 2028 </p>
+            </div>
+            <div class="struktur">
+                <img src="<?= base_url('assets/images/strukturfix.png') ?>" alt="">
+            </div>
         </div>
     </div>
 
