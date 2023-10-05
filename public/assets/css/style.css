@@ -499,6 +499,11 @@ nav {
     background-color: #46705C;
 }
 
+.visi .content_sp{
+    width: 70%;
+    margin: 0 auto;
+}
+
 .visi_misi .visi_nav, .misi_nav {
     cursor: pointer;
     display: flex;
@@ -921,14 +926,14 @@ footer .left .socmed_icon a {
 }
 
 .container_about {
-    margin: 2vw auto;
-    width: 80%;
+    margin: 0 auto;
+    width: 90%;
     display: grid;
     grid-template-areas: "about_one about_two";
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     font-family: 'Poppins', sans-serif;
-    min-height: max-content;
+    min-height: 100%;
 }
 
 .about_content .tittle_content_about {
@@ -943,6 +948,12 @@ footer .left .socmed_icon a {
     background-position: 0 100%;
     display: inline-block;
     padding-bottom: 3px;
+}
+
+.tittle_content_about .image_about{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .container_about .about_one {
@@ -990,9 +1001,15 @@ footer .left .socmed_icon a {
 }
 
 .visi .tittle_visi {
-    font-style: bolder;
-    display: block;
+    background-image: linear-gradient(0deg, transparent 50%, #46705C 50%);
+    background-size: 50% 5px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    display: inline-block;
+    font-family:'Poppins', sans-serif;
     text-align: center;
+    line-height: 25px;
+    width: 100%;
 }
 
 .visi .container_visi {
