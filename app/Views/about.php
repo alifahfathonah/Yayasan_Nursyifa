@@ -173,7 +173,6 @@
                                     di hari kiamat kelak. Amin.</p>
                                 <p>Ketua Yayasan Nur Assyifa Samarinda</p>
                                 <br>
-                                <p><i>Ketua Yayasan Nur Assyifa Samarinda</i></p>
                                 <p style="font-weight: bold;">dr. Abdul Haris Nur, Sp. An</p>
                                 <br>
                                 <br>

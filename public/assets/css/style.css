@@ -252,9 +252,18 @@ header .text_header {
     width: 60%;
 }
 
-.content_text .content_description {
+.content_text .content_description{
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    /* Jumlah baris yang ingin ditampilkan */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* Menampilkan elipsis (...) pada teks yang dipotong */
+}
+
+.content_text .content_tittle {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
     /* Jumlah baris yang ingin ditampilkan */
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -295,6 +304,21 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    /* Mengubah tata letak ketika lebar layar <= 768px */
+    .container_dashboard {
+        grid-template-columns: 1fr;
+        grid-template-areas: "content";
+    }
+    .sidebar {
+        display: none; /* Sembunyikan sidebar */
+    }
+
+    .content_dashboard {
+        margin-top: 10vw;
+    }
 }
 
 
@@ -1312,7 +1336,6 @@ footer .left .socmed_icon a {
         display: flex;
         flex-direction: column;
         height: 80vh;
-        padding-top: 10vh;
     }
 
     .container_left .logo img {
@@ -1330,18 +1353,20 @@ footer .left .socmed_icon a {
 
     .container_right .sub_login {
         font-size: 1rem !important;
-        margin-bottom: 3vh;
     }
 
     .container_right .form_login {
+        width: 100%;
         min-height: 20vh !important;
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: flex-start !important;
         gap: 10px !important;
     }
 
     .container .container_right .button_login {
+        width: 100%;
         justify-content: center;
     }
 
