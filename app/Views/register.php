@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="<?= base_url('assets/images/logo.png'); ?>" type="image/x-icon">
-    <title>Login</title>
+    <title>Register</title>
 </head>
 
 <body>
@@ -27,10 +27,10 @@
 
         <div class="container_right">
             <div class="tittle_login">
-                <p>Sign In</p>
+                <p>Register</p>
             </div>
             <div class="sub_login">
-                <p>Using your admin account</p>
+                <p>Register your admin account</p>
             </div>
 
             <?php

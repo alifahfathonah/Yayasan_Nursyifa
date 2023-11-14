@@ -28,21 +28,20 @@
                 <li><a href="<?php echo base_url('Login/logout') ?>">Logout</a></li>
             </ul>
         </div>
-        <?php if (!empty(session()->getFlashdata('error'))) : ?>
-            <div class="alert alert-danger" role="alert">
-                <h4>Periksa Entrian Form</h4>
-                </hr />
-                <?php echo session()->getFlashdata('error'); ?>
-            </div>
-        <?php endif; ?>
-        <?php if (session()->getFlashdata('pesan')) : ?>
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong><?= session()->getFlashdata('pesan'); ?></strong>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        <?php endif; ?>
+
         <?php foreach ($tampil as $k) : ?>
             <div class="content_dashboard_upload">
+                <?php if (!empty(session()->getFlashdata('error'))) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong style="list-style: none;"><?= session()->getFlashdata('error'); ?></strong>
+                    </div>
+                <?php endif; ?>
+                <?php if (session()->getFlashdata('pesan')) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong><?= session()->getFlashdata('pesan'); ?></strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php endif; ?>
                 <form action="<?php echo base_url('Content/' . $k['id'] . '/update_edit') ?>" method="post" enctype="multipart/form-data" class="form_upload">
                     <div class="upload_judul">
                         <label for="judul">Judul</label>

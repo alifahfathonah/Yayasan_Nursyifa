@@ -51,7 +51,8 @@ class Content extends BaseController{
             'deskripsi' => $this->request->getVar('deskripsi'),
         ];
         $data_upload->insert($data); // Simpan informasi file ke database
-        return redirect()->to('upload');
+        session()->setFlashdata('pesan', 'Data Berhasil diunggah');
+        return redirect()->to('dashboard');
     }
 
     public function Edit(){
@@ -76,11 +77,28 @@ class Content extends BaseController{
         return view('edit', $data);
     }
 
-    public function delete_content($id){
+    public function delete_content($id)
+    {
         $data_edit = new data_edit();
-        $data_edit->where('id', $id);
-        $data_edit->delete();
-        session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
+
+        // Ambil nama gambar dari database
+        $gambarData = $data_edit->find($id);
+        $namaGambar = $gambarData['gambar'];
+
+        // Hapus data dari database
+        $data_edit->delete($id);
+
+        // Hapus gambar dari folder
+        $gambarPath = FCPATH . 'assets/images/' . $namaGambar;
+
+        // Periksa apakah file ada sebelum mencoba untuk menghapusnya
+        if (file_exists($gambarPath)) {
+            unlink($gambarPath);
+            session()->setFlashdata('pesan', 'data dan gambar berhasil dihapus');
+        } else {
+            session()->setFlashdata('pesan', 'data berhasil dihapus, tetapi file gambar tidak ditemukan');
+        }
+
         return redirect()->to(site_url('dashboard'));
     }
 
@@ -90,13 +108,21 @@ class Content extends BaseController{
             'judul' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'Isi Keluhan Tidak boleh kosong'
+                    'required' => 'Judul Tidak boleh kosong'
                 ]
             ],
             'deskripsi' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Nama Tidak boleh kosong'
+                ]
+            ],
+            'gambar' => [
+                'rules' => 'max_size[gambar, 3500]|is_image[gambar]|mime_in[gambar,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                    'max_size' => 'Ukuran gambar terlalu besar',
+                    'is_image' => 'Yang anda pilih bukan file gambar',
+                    'mime_in' => 'Yang anda pilih bukan gambar'
                 ]
             ]
         ])) {
@@ -123,7 +149,7 @@ class Content extends BaseController{
             'deskripsi' => $this->request->getPost('deskripsi')
         ]);
 
-        session()->setFlashdata('pesan', 'Data Aduan Berhasil diubah');
+        session()->setFlashdata('pesan', 'Data Berhasil diubah');
         return redirect()->to(base_url('dashboard'));
     }
 }

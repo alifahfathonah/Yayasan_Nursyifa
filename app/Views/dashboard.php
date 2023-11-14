@@ -71,14 +71,12 @@
                         <a href="<?php echo base_url('Content/' . $k['id'] . '/edit_content') ?>">
                             <button class="btn" style="color: black; background-color: #FAFF1EC4">Edit</button>
                         </a>
-                        <form action="<?php echo base_url('Content/' . $k['id'] . '/delete_content') ?>" method="post" class="d-inline" onclick="return confirm('Apakah anda ingin menghapus data aduan ?');">
+                        <form action="<?php echo base_url('Content/' . $k['id'] . '/delete_content') ?>" method="post" class="d-inline" onclick="return confirm('Apakah anda ingin menghapus data ?');">
                             <? csrf_field(); ?>
                             <input type="hidden" value="Delete" name="_method">
                             <button type="submit" class="btn btn-danger btn-s">Delete</button>
                         </form>
                     </div>
-
-
                 </div>
             <?php endforeach; ?>
 
