@@ -222,7 +222,7 @@
         <div class="image_join">
             <img src="<?= base_url('assets/images/qr.png') ?>" alt="">
         </div>
-        <a href="https://api.whatsapp.com/send?phone=08115813345" target="_blank">Klik untuk bergabung
+        <a href="https://api.whatsapp.com/send?phone=628115813345" target="_blank">Klik untuk bergabung
         </a>
     </div>
 
